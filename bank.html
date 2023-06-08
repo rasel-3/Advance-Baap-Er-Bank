@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>baap er bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-6xl text-center mt-3 mb-14">
+        <span class="text-green-400 font-bold">ADVANCE</span> baap er bank !!
+    </h1>
+    <main>
+        <section class="mb-14">
+            <div class="grid grid-cols-3 gap-4 w-4/5 mx-auto text-white">
+                <div class="bg-emerald-900 pl-8 rounded-xl p-4">
+                    <h3 class="text-2xl font-bold">DEPOSIT</h3>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span> </h2>
+                </div>
+                <div class="bg-red-200 pl-8 rounded-xl p-4">
+                    <h3 class="text-2xl font-bold">WITHDRAW</h3>
+                    <h2  class="text-5xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-amber-300 pl-8 rounded-xl p-4">
+                    <h3 class="text-2xl font-bold">BALANCE</h3>
+                    <h2  class="text-5xl">$<span id="balance-total">1000</span></h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-fuchsia-500 p-8 rounded-xl">
+                    <h3 class="text-5xl font-bold">Please deposit</h3>
+                    <br />
+                    <input class="block mb-8 w-9/12 px-3 text-black" type="text" name="" id="deposit-field"
+                        placeholder="Amount you want to deposit" />
+
+                    <button id="btn-deposit" class="text-xl bg-yellow-700 rounded-xl p-2 font-bold hover:bg-sky-700">
+                        deposit
+                    </button>
+                </div>
+                <div class="bg-lime-300 p-8 rounded-xl">
+                    <h3 class="text-5xl font-bold">Please withdraw</h3>
+                    <br/>
+                    <input class="block mb-8 w-9/12 text-black  px-3" type="text" name="" id="withdraw-field"
+                        placeholder="Amount you want to withdraw" />
+
+                    <button id="btn-withdraw" class="text-xl bg-violet-500 rounded-xl p-2 font-bold hover:bg-sky-700">
+                        withdraw
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+
+</html>
